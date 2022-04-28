@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./dist/css/index.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="search__panel">
+        <input placeholder="Your city" type="text" class="search__input" />
+        <button class="search__btn">Search</button>
+      </div>
+      <div class="weather__panel">
+        <div class="weather__board">
+          <h2 class="weather__city"></h2>
+          <h2 class="weather__temp">Temperature ...˚C</h2>
+          <div class="weather__description">
+            <img
+              src="https://openweathermap.org/img/wn/04d@2x.png"
+              alt=""
+              class="weather__icon"
+            />
+            <p class="weather__description-item">Cloudy</p>
+          </div>
+        </div>
+        <div class="weather__info">
+          <div class="weather__humidity">Humidity: ...%</div>
+          <div class="weather__windSpeed">Wind speed: ... km/h</div>
+        </div>
+      </div>
+    </div>
+    <script defer src="./index.js"></script>
+  </body>
+</html>
