@@ -10,7 +10,7 @@ const searchBtn = document.querySelector(".search__btn");
 
 let theWeather = {
   apiKey: "870e96d1c3e0868300e4af1e9a6ad904",
-  weatherData: async function (city) {
+  weatherData: function (city) {
     fetch(
       `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${this.apiKey}`
     )
